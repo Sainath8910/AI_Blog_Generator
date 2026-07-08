@@ -31,6 +31,7 @@ DEBUG = os.getenv("DEBUG") == "True"
 
 ALLOWED_HOSTS = os.getenv(
     "ALLOWED_HOSTS",
+    "ai-blog-generator-q20z.onrender.com"
     "127.0.0.1,localhost"
 ).split(",")
 
