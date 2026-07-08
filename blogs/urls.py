@@ -7,6 +7,8 @@ from .views import (
     my_blogs,
     edit_blog,
     delete_blog,
+    restore_blog,
+    deleted_blogs,
     update_blog,
     regenerate_paragraph,
     regenerate_image,
@@ -23,6 +25,7 @@ urlpatterns = [
     path("generate/", GenerateBlogView.as_view(), name="generate"),
 
     path("my/", my_blogs, name="my_blogs"),
+    path("deleted/", deleted_blogs, name="deleted_blogs"),
 
     path("regenerate/paragraph/", regenerate_paragraph, name="regenerate_paragraph"),
 
@@ -37,6 +40,7 @@ urlpatterns = [
     path("<int:blog_id>/update/", update_blog, name="update"),
 
     path("<int:blog_id>/delete/", delete_blog, name="delete"),
+    path("<int:blog_id>/restore/", restore_blog, name="restore"),
 
     path("<int:blog_id>/", blog_detail, name="detail"),
 ]

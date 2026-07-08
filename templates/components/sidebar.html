@@ -1,6 +1,4 @@
-<aside
-    id="sidebar"
-    class="fixed inset-y-0 left-0 z-50 w-72 flex flex-col
+<aside id="sidebar" class="fixed inset-y-0 left-0 z-50 w-72 flex flex-col
     bg-white/90 dark:bg-slate-900/90
     backdrop-blur-xl
     border-r border-slate-200/70 dark:border-slate-800/70
@@ -12,35 +10,28 @@
     <!-- Logo -->
     <div class="relative flex items-center h-20 px-7 border-b border-slate-200/70 dark:border-slate-800/70">
 
-        <a
-            href="/"
-            class="group flex items-center gap-4">
+        <a href="/" class="group flex items-center gap-4">
 
-            <div
-                class="relative flex items-center justify-center w-12 h-12 rounded-2xl
+            <div class="relative flex items-center justify-center w-12 h-12 rounded-2xl
                 bg-gradient-to-br from-blue-600 via-indigo-600 to-violet-600
                 text-white shadow-lg shadow-blue-500/30
                 transition-all duration-300
                 group-hover:scale-105 group-hover:rotate-3">
 
-                <i
-                    data-lucide="sparkles"
-                    class="w-6 h-6">
+                <i data-lucide="sparkles" class="w-6 h-6">
                 </i>
 
             </div>
 
             <div>
 
-                <h1
-                    class="text-lg font-bold tracking-tight">
+                <h1 class="text-lg font-bold tracking-tight">
 
                     AI Blog
 
                 </h1>
 
-                <p
-                    class="text-xs font-medium text-slate-500 dark:text-slate-400">
+                <p class="text-xs font-medium text-slate-500 dark:text-slate-400">
 
                     Intelligent Content Generator
 
@@ -53,12 +44,9 @@
     </div>
 
     <!-- Navigation -->
-    <nav
-        class="flex-1 overflow-y-auto px-4 py-6 space-y-2">
+    <nav class="flex-1 overflow-y-auto px-4 py-6 space-y-2">
 
-        <a
-            href="{% url 'blogs:dashboard' %}"
-            class="group relative flex items-center gap-3 rounded-2xl px-4 py-3 transition-all duration-300
+        <a href="{% url 'blogs:dashboard' %}" class="group relative flex items-center gap-3 rounded-2xl px-4 py-3 transition-all duration-300
 
             {% if request.resolver_match.url_name == 'dashboard' %}
             bg-gradient-to-r from-blue-600 to-indigo-600
@@ -75,12 +63,10 @@
             ">
             {% if request.resolver_match.url_name == 'dashboard' %}
             <span
-            class="absolute left-0 top-2 bottom-2 w-1 rounded-r-full bg-white shadow-[0_0_18px_rgba(255,255,255,0.9)]">
+                class="absolute left-0 top-2 bottom-2 w-1 rounded-r-full bg-white shadow-[0_0_18px_rgba(255,255,255,0.9)]">
             </span>
             {% endif %}
-            <i
-                data-lucide="layout-dashboard"
-                class="w-5 h-5 transition-all duration-300
+            <i data-lucide="layout-dashboard" class="w-5 h-5 transition-all duration-300
                 {% if request.resolver_match.url_name == 'dashboard' %}
                 scale-110
                 {% else %}
@@ -96,9 +82,7 @@
 
         </a>
 
-        <a
-            href="{% url 'blogs:generate' %}"
-            class="group relative flex items-center gap-3 rounded-2xl px-4 py-3 transition-all duration-300
+        <a href="{% url 'blogs:generate' %}" class="group relative flex items-center gap-3 rounded-2xl px-4 py-3 transition-all duration-300
 
             {% if request.resolver_match.url_name == 'generate' %}
             bg-gradient-to-r from-blue-600 to-indigo-600
@@ -115,12 +99,10 @@
             ">
             {% if request.resolver_match.url_name == 'generate' %}
             <span
-            class="absolute left-0 top-2 bottom-2 w-1 rounded-r-full bg-white shadow-[0_0_18px_rgba(255,255,255,0.9)]">
+                class="absolute left-0 top-2 bottom-2 w-1 rounded-r-full bg-white shadow-[0_0_18px_rgba(255,255,255,0.9)]">
             </span>
             {% endif %}
-            <i
-                data-lucide="sparkles"
-                class="w-5 h-5 transition-all duration-300
+            <i data-lucide="sparkles" class="w-5 h-5 transition-all duration-300
                 {% if request.resolver_match.url_name == 'generate' %}
                 scale-110
                 {% else %}
@@ -136,10 +118,8 @@
 
         </a>
 
-        
-        <a
-            href="{% url 'blogs:my_blogs' %}"
-            class="group relative flex items-center gap-3 rounded-2xl px-4 py-3 transition-all duration-300
+
+        <a href="{% url 'blogs:my_blogs' %}" class="group relative flex items-center gap-3 rounded-2xl px-4 py-3 transition-all duration-300
 
             {% if request.resolver_match.url_name == 'my_blogs' %}
             bg-gradient-to-r from-blue-600 to-indigo-600
@@ -156,12 +136,10 @@
             ">
             {% if request.resolver_match.url_name == 'my_blogs' %}
             <span
-            class="absolute left-0 top-2 bottom-2 w-1 rounded-r-full bg-white shadow-[0_0_18px_rgba(255,255,255,0.9)]">
+                class="absolute left-0 top-2 bottom-2 w-1 rounded-r-full bg-white shadow-[0_0_18px_rgba(255,255,255,0.9)]">
             </span>
             {% endif %}
-            <i
-                data-lucide="book-open"
-                class="w-5 h-5 transition-all duration-300
+            <i data-lucide="book-open" class="w-5 h-5 transition-all duration-300
                 {% if request.resolver_match.url_name == 'my_blogs' %}
                 scale-110
                 {% else %}
@@ -175,13 +153,42 @@
 
             </span>
 
-        </a>
+            <a href="{% url 'blogs:deleted_blogs' %}" class="group relative flex items-center gap-3 rounded-2xl px-4 py-3 transition-all duration-300
+
+            {% if request.resolver_match.url_name == 'deleted_blogs' %}
+            bg-gradient-to-r from-red-600 to-rose-600
+            text-white
+            shadow-lg shadow-red-500/25
+            scale-[1.02]
+            {% else %}
+            text-slate-700 dark:text-slate-300
+            hover:bg-gradient-to-r hover:from-red-50 hover:to-rose-50
+            dark:hover:from-slate-800 dark:hover:to-slate-800
+            hover:text-red-700 dark:hover:text-red-400
+            hover:translate-x-1
+            {% endif %}
+            ">
+                {% if request.resolver_match.url_name == 'deleted_blogs' %}
+                <span
+                    class="absolute left-0 top-2 bottom-2 w-1 rounded-r-full bg-white shadow-[0_0_18px_rgba(255,255,255,0.9)]">
+                </span>
+                {% endif %}
+                <i data-lucide="trash-2" class="w-5 h-5 transition-all duration-300
+                {% if request.resolver_match.url_name == 'deleted_blogs' %}
+                scale-110
+                {% else %}
+                group-hover:scale-110
+                {% endif %}">
+                </i>
+                <span class="font-medium">
+                    Trash
+                </span>
+            </a>
 
     </nav>
 
     <!-- Footer -->
-    <div
-        class="p-5 border-t border-slate-200/70 dark:border-slate-800/70">
+    <div class="p-5 border-t border-slate-200/70 dark:border-slate-800/70">
 
         <!-- Footer content (Removed logout) -->
 

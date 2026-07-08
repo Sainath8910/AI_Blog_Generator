@@ -166,7 +166,10 @@ class DashboardView(TemplateView):
 
 def blog_detail(request, blog_id):
 
-    blog = BlogRepository.get_blog(blog_id)
+    from django.shortcuts import get_object_or_404
+    from blogs.models import Blog
+    blog = get_object_or_404(Blog, id=blog_id)
+    # prefetch not strictly necessary if template iterates normally, but good practice if needed
 
     return render(
 
@@ -424,3 +427,50 @@ def regenerate_entire_blog(request):
             },
             status=500,
         )
+
+def deleted_blogs(request):
+    from django.db.models import Q
+    search = request.GET.get("q", "").strip()
+    category = request.GET.get("category", "").strip()
+    sort = request.GET.get("sort", "-created_at").strip()
+
+    blogs = Blog.objects.filter(is_deleted=True)
+    if search:
+        blogs = blogs.filter(
+            Q(title__icontains=search) |
+            Q(topic__icontains=search) |
+            Q(description__icontains=search)
+        )
+    if category:
+        blogs = blogs.filter(category=category)
+    
+    blogs = blogs.order_by(sort)
+
+    paginator = Paginator(blogs, 6)
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+
+    raw_categories = Blog.objects.filter(is_deleted=True).values_list("category", flat=True)
+    categories = sorted(list(set(c.strip() for c in raw_categories if c and c.strip())))
+
+    return render(
+        request,
+        "blogs/deleted_blogs.html",
+        {
+            "page_obj": page_obj,
+            "search": search,
+            "selected_category": category,
+            "selected_sort": sort,
+            "categories": categories,
+        },
+    )
+
+@require_POST
+def restore_blog(request, blog_id):
+    try:
+        blog = Blog.objects.get(id=blog_id, is_deleted=True)
+        blog.is_deleted = False
+        blog.save(update_fields=["is_deleted"])
+        return JsonResponse({"success": True})
+    except Blog.DoesNotExist:
+        return JsonResponse({"success": False, "message": "Blog not found."}, status=404)
