@@ -6,24 +6,22 @@ Generate Blog | AI Blog Generator
 
 {% block content %}
 <div class="max-w-7xl mx-auto">
-<div id="pageContent">
-    <form method="post" id="blogForm">
+    <div id="pageContent">
+        <form method="post" id="blogForm">
 
-        {% csrf_token %}
+            {% csrf_token %}
 
-        <!-- ================================================= -->
-        <!-- Main Content -->
-        <!-- ================================================= -->
+            <!-- ================================================= -->
+            <!-- Main Content -->
+            <!-- ================================================= -->
 
-        <div class="space-y-10">
-<!-- ================================================= -->
-<!-- Hero -->
-<!-- ================================================= -->
-<div
-class="mb-8">
+            <div class="space-y-10">
+                <!-- ================================================= -->
+                <!-- Hero -->
+                <!-- ================================================= -->
+                <div class="mb-8">
 
-    <div
-    class="
+                    <div class="
     inline-flex
 
     items-center
@@ -47,22 +45,19 @@ class="mb-8">
     text-blue-700
     dark:text-blue-300">
 
-        <i
-        data-lucide="sparkles"
-        class="w-4 h-4">
-        </i>
+                        <i data-lucide="sparkles" class="w-4 h-4">
+                        </i>
 
-        <span>
+                        <span>
 
-            New AI Generation Experience
+                            New AI Generation Experience
 
-        </span>
+                        </span>
 
-    </div>
+                    </div>
 
-</div>
-<section
-class="relative overflow-hidden rounded-[2rem]
+                </div>
+                <section class="relative overflow-hidden rounded-[2rem]
 bg-gradient-to-br
 from-blue-600
 via-indigo-600
@@ -70,38 +65,33 @@ to-violet-700
 text-white
 shadow-2xl">
 
-    <!-- Background Effects -->
+                    <!-- Background Effects -->
 
-    <div
-    class="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-white/10 blur-3xl">
-    </div>
+                    <div class="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-white/10 blur-3xl">
+                    </div>
 
-    <div
-    class="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-white/10 blur-3xl">
-    </div>
+                    <div class="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-white/10 blur-3xl">
+                    </div>
 
-    <div
-    class="relative
+                    <div class="relative
     px-8
     py-10
     lg:px-10
     lg:py-12">
 
-        <div
-        class="
+                        <div class="
         grid
         xl:grid-cols-[1fr_420px]
         gap-10
         items-center">
 
-            <!-- ================================================= -->
-            <!-- Left -->
-            <!-- ================================================= -->
+                            <!-- ================================================= -->
+                            <!-- Left -->
+                            <!-- ================================================= -->
 
-            <div>
+                            <div>
 
-                <div
-                class="
+                                <div class="
                 inline-flex
                 items-center
                 gap-2
@@ -118,17 +108,14 @@ shadow-2xl">
 
                 backdrop-blur">
 
-                    <i
-                    data-lucide="sparkles"
-                    class="w-4 h-4">
-                    </i>
+                                    <i data-lucide="sparkles" class="w-4 h-4">
+                                    </i>
 
-                    AI Powered Blog Generator
+                                    AI Powered Blog Generator
 
-                </div>
+                                </div>
 
-                <h1
-                class="
+                                <h1 class="
                 mt-6
 
                 text-4xl
@@ -139,18 +126,17 @@ shadow-2xl">
 
                 leading-tight">
 
-                    What would you like
+                                    What would you like
 
-                    <span class="block text-blue-100">
+                                    <span class="block text-blue-100">
 
-                        to write today?
+                                        to write today?
 
-                    </span>
+                                    </span>
 
-                </h1>
+                                </h1>
 
-                <p
-                class="
+                                <p class="
                 mt-6
 
                 max-w-2xl
@@ -161,25 +147,23 @@ shadow-2xl">
 
                 text-blue-100">
 
-                    Describe your idea and let AI generate a complete
-                    professional blog with structured chapters,
-                    beautiful AI-generated images, FAQs,
-                    resources and SEO optimization.
+                                    Describe your idea and let AI generate a complete
+                                    professional blog with structured chapters,
+                                    beautiful AI-generated images, FAQs,
+                                    resources and SEO optimization.
 
-                </p>
+                                </p>
 
-                <!-- Features -->
+                                <!-- Features -->
 
-                <div
-                class="
+                                <div class="
                 mt-10
 
                 flex
                 flex-wrap
                 gap-4">
 
-                    <div
-                    class="
+                                    <div class="
                     inline-flex
                     items-center
                     gap-2
@@ -193,17 +177,14 @@ shadow-2xl">
 
                     backdrop-blur">
 
-                        <i
-                        data-lucide="check"
-                        class="w-4 h-4">
-                        </i>
+                                        <i data-lucide="check" class="w-4 h-4">
+                                        </i>
 
-                        SEO Optimized
+                                        SEO Optimized
 
-                    </div>
+                                    </div>
 
-                    <div
-                    class="
+                                    <div class="
                     inline-flex
                     items-center
                     gap-2
@@ -217,17 +198,14 @@ shadow-2xl">
 
                     backdrop-blur">
 
-                        <i
-                        data-lucide="check"
-                        class="w-4 h-4">
-                        </i>
+                                        <i data-lucide="check" class="w-4 h-4">
+                                        </i>
 
-                        AI Images
+                                        AI Images
 
-                    </div>
+                                    </div>
 
-                    <div
-                    class="
+                                    <div class="
                     inline-flex
                     items-center
                     gap-2
@@ -241,25 +219,22 @@ shadow-2xl">
 
                     backdrop-blur">
 
-                        <i
-                        data-lucide="check"
-                        class="w-4 h-4">
-                        </i>
+                                        <i data-lucide="check" class="w-4 h-4">
+                                        </i>
 
-                        Complete Blog
+                                        Complete Blog
 
-                    </div>
+                                    </div>
 
-                </div>
+                                </div>
 
-            </div>
+                            </div>
 
-            <!-- ================================================= -->
-            <!-- Right -->
-            <!-- ================================================= -->
+                            <!-- ================================================= -->
+                            <!-- Right -->
+                            <!-- ================================================= -->
 
-            <div
-            class="
+                            <div class="
             grid
 
             grid-cols-2
@@ -270,10 +245,9 @@ shadow-2xl">
 
             gap-5">
 
-                <!-- AI Content -->
+                                <!-- AI Content -->
 
-                <div
-                class="
+                                <div class="
                 group
 
                 relative
@@ -298,8 +272,7 @@ shadow-2xl">
                 hover:bg-white/15
                 hover:shadow-2xl">
 
-                    <div
-                    class="
+                                    <div class="
                     absolute
                     -right-10
                     -top-10
@@ -312,12 +285,11 @@ shadow-2xl">
                     bg-blue-300/20
 
                     blur-3xl">
-                    </div>
+                                    </div>
 
-                    <div class="relative">
+                                    <div class="relative">
 
-                        <div
-                        class="
+                                        <div class="
                         flex
 
                         h-14
@@ -330,9 +302,7 @@ shadow-2xl">
 
                         bg-white/15">
 
-                            <i
-                            data-lucide="bot"
-                            class="
+                                            <i data-lucide="bot" class="
                             w-7
                             h-7
 
@@ -341,45 +311,42 @@ shadow-2xl">
                             duration-300
 
                             group-hover:scale-110">
-                            </i>
+                                            </i>
 
-                        </div>
+                                        </div>
 
-                        <h3
-                        class="
+                                        <h3 class="
                         mt-6
 
                         text-2xl
 
                         font-bold">
 
-                            AI Content
+                                            AI Content
 
-                        </h3>
+                                        </h3>
 
-                        <p
-                        class="
+                                        <p class="
                         mt-3
 
                         leading-7
 
                         text-blue-100">
 
-                            Generates complete,
-                            SEO-ready blog articles with
-                            chapters, summaries,
-                            takeaways and conclusions.
+                                            Generates complete,
+                                            SEO-ready blog articles with
+                                            chapters, summaries,
+                                            takeaways and conclusions.
 
-                        </p>
+                                        </p>
 
-                    </div>
+                                    </div>
 
-                </div>
+                                </div>
 
-                <!-- AI Images -->
+                                <!-- AI Images -->
 
-                <div
-                class="
+                                <div class="
                 group
 
                 relative
@@ -404,8 +371,7 @@ shadow-2xl">
                 hover:bg-white/15
                 hover:shadow-2xl">
 
-                    <div
-                    class="
+                                    <div class="
                     absolute
                     -right-10
                     -top-10
@@ -418,12 +384,11 @@ shadow-2xl">
                     bg-violet-300/20
 
                     blur-3xl">
-                    </div>
+                                    </div>
 
-                    <div class="relative">
+                                    <div class="relative">
 
-                        <div
-                        class="
+                                        <div class="
                         flex
 
                         h-14
@@ -436,9 +401,7 @@ shadow-2xl">
 
                         bg-white/15">
 
-                            <i
-                            data-lucide="image"
-                            class="
+                                            <i data-lucide="image" class="
                             w-7
                             h-7
 
@@ -447,54 +410,51 @@ shadow-2xl">
                             duration-300
 
                             group-hover:scale-110">
-                            </i>
+                                            </i>
 
-                        </div>
+                                        </div>
 
-                        <h3
-                        class="
+                                        <h3 class="
                         mt-6
 
                         text-2xl
 
                         font-bold">
 
-                            AI Images
+                                            AI Images
 
-                        </h3>
+                                        </h3>
 
-                        <p
-                        class="
+                                        <p class="
                         mt-3
 
                         leading-7
 
                         text-blue-100">
 
-                            Automatically creates
-                            stunning hero, chapter
-                            and conclusion images that
-                            perfectly match your content.
+                                            Automatically creates
+                                            stunning hero, chapter
+                                            and conclusion images that
+                                            perfectly match your content.
 
-                        </p>
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
 
                     </div>
 
-                </div>
+                </section>
+                <!-- ================================================= -->
+                <!-- Blog Details -->
+                <!-- ================================================= -->
 
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- ================================================= -->
-<!-- Blog Details -->
-<!-- ================================================= -->
-
-<section
-class="
+                <section class="
 relative
 
 overflow-hidden
@@ -512,10 +472,9 @@ backdrop-blur-xl
 
 shadow-xl">
 
-    <!-- Decorative Background -->
+                    <!-- Decorative Background -->
 
-    <div
-    class="
+                    <div class="
     absolute
 
     inset-x-0
@@ -535,14 +494,13 @@ shadow-xl">
     dark:from-blue-500/10
     dark:via-indigo-500/10
     dark:to-violet-500/10">
-    </div>
+                    </div>
 
-    <div class="relative p-8 lg:p-10">
+                    <div class="relative p-8 lg:p-10">
 
-        <!-- Header -->
+                        <!-- Header -->
 
-        <div
-        class="
+                        <div class="
         flex
 
         items-start
@@ -551,8 +509,7 @@ shadow-xl">
 
         mb-10">
 
-            <div
-            class="
+                            <div class="
             flex
 
             h-16
@@ -572,24 +529,20 @@ shadow-xl">
 
             shadow-lg">
 
-                <i
-                data-lucide="file-pen-line"
-                class="w-8 h-8">
-                </i>
+                                <i data-lucide="file-pen-line" class="w-8 h-8">
+                                </i>
 
-            </div>
+                            </div>
 
-            <div>
+                            <div>
 
-                <h2
-                class="text-3xl font-bold">
+                                <h2 class="text-3xl font-bold">
 
-                    Blog Details
+                                    Blog Details
 
-                </h2>
+                                </h2>
 
-                <p
-                class="
+                                <p class="
                 mt-2
 
                 max-w-2xl
@@ -597,21 +550,20 @@ shadow-xl">
                 text-slate-500
                 dark:text-slate-400">
 
-                    Describe your idea below. The more context you provide,
-                    the better your AI-generated blog will be.
+                                    Describe your idea below. The more context you provide,
+                                    the better your AI-generated blog will be.
 
-                </p>
+                                </p>
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
-        <!-- Topic -->
+                        <!-- Topic -->
 
-        <div class="mb-8">
+                        <div class="mb-8">
 
-            <label
-            class="
+                            <label class="
             mb-3
 
             flex
@@ -624,36 +576,32 @@ shadow-xl">
 
             font-semibold">
 
-                <i
-                data-lucide="pen-square"
-                class="w-4 h-4 text-blue-600">
-                </i>
+                                <i data-lucide="pen-square" class="w-4 h-4 text-blue-600">
+                                </i>
 
-                {{ form.topic.label }}
+                                {{ form.topic.label }}
 
-            </label>
+                            </label>
 
-            {{ form.topic }}
+                            {{ form.topic }}
 
-            {% if form.topic.errors %}
+                            {% if form.topic.errors %}
 
-            <p
-            class="mt-3 text-sm text-red-500">
+                            <p class="mt-3 text-sm text-red-500">
 
-                {{ form.topic.errors.0 }}
+                                {{ form.topic.errors.0 }}
 
-            </p>
+                            </p>
 
-            {% endif %}
+                            {% endif %}
 
-        </div>
+                        </div>
 
-        <!-- Content Brief -->
+                        <!-- Content Brief -->
 
-        <div class="mb-8">
+                        <div class="mb-8">
 
-            <div
-            class="
+                            <div class="
             flex
 
             items-center
@@ -662,8 +610,7 @@ shadow-xl">
 
             mb-3">
 
-                <label
-                class="
+                                <label class="
                 flex
 
                 items-center
@@ -674,46 +621,40 @@ shadow-xl">
 
                 font-semibold">
 
-                    <i
-                    data-lucide="align-left"
-                    class="w-4 h-4 text-indigo-600">
-                    </i>
+                                    <i data-lucide="align-left" class="w-4 h-4 text-indigo-600">
+                                    </i>
 
-                    {{ form.content_brief.label }}
+                                    {{ form.content_brief.label }}
 
-                </label>
+                                </label>
 
-                <span
-                id="briefCounter"
-                class="
+                                <span id="briefCounter" class="
                 text-xs
 
                 text-slate-400">
 
-                    0 Characters
+                                    0 Characters
 
-                </span>
+                                </span>
 
-            </div>
+                            </div>
 
-            {{ form.content_brief }}
+                            {{ form.content_brief }}
 
-        </div>
+                        </div>
 
-        <!-- Options -->
+                        <!-- Options -->
 
-        <div
-        class="
+                        <div class="
         grid
 
         gap-6
 
         md:grid-cols-3">
 
-            <div>
+                            <div>
 
-                <label
-                class="
+                                <label class="
                 mb-3
 
                 flex
@@ -726,23 +667,20 @@ shadow-xl">
 
                 font-semibold">
 
-                    <i
-                    data-lucide="users"
-                    class="w-4 h-4 text-emerald-600">
-                    </i>
+                                    <i data-lucide="users" class="w-4 h-4 text-emerald-600">
+                                    </i>
 
-                    {{ form.target_audience.label }}
+                                    {{ form.target_audience.label }}
 
-                </label>
+                                </label>
 
-                {{ form.target_audience }}
+                                {{ form.target_audience }}
 
-            </div>
+                            </div>
 
-            <div>
+                            <div>
 
-                <label
-                class="
+                                <label class="
                 mb-3
 
                 flex
@@ -755,23 +693,20 @@ shadow-xl">
 
                 font-semibold">
 
-                    <i
-                    data-lucide="mic"
-                    class="w-4 h-4 text-violet-600">
-                    </i>
+                                    <i data-lucide="mic" class="w-4 h-4 text-violet-600">
+                                    </i>
 
-                    {{ form.tone.label }}
+                                    {{ form.tone.label }}
 
-                </label>
+                                </label>
 
-                {{ form.tone }}
+                                {{ form.tone }}
 
-            </div>
+                            </div>
 
-            <div>
+                            <div>
 
-                <label
-                class="
+                                <label class="
                 mb-3
 
                 flex
@@ -784,27 +719,24 @@ shadow-xl">
 
                 font-semibold">
 
-                    <i
-                    data-lucide="ruler"
-                    class="w-4 h-4 text-orange-600">
-                    </i>
+                                    <i data-lucide="ruler" class="w-4 h-4 text-orange-600">
+                                    </i>
 
-                    {{ form.length.label }}
+                                    {{ form.length.label }}
 
-                </label>
+                                </label>
 
-                {{ form.length }}
+                                {{ form.length }}
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
-        <!-- Keywords -->
+                        <!-- Keywords -->
 
-        <div class="mt-8">
+                        <div class="mt-8">
 
-            <label
-            class="
+                            <label class="
             mb-3
 
             flex
@@ -817,19 +749,16 @@ shadow-xl">
 
             font-semibold">
 
-                <i
-                data-lucide="tags"
-                class="w-4 h-4 text-pink-600">
-                </i>
+                                <i data-lucide="tags" class="w-4 h-4 text-pink-600">
+                                </i>
 
-                {{ form.keywords.label }}
+                                {{ form.keywords.label }}
 
-            </label>
+                            </label>
 
-            {{ form.keywords }}
+                            {{ form.keywords }}
 
-            <p
-            class="
+                            <p class="
             mt-3
 
             text-sm
@@ -837,26 +766,25 @@ shadow-xl">
             text-slate-500
             dark:text-slate-400">
 
-                {{ form.keywords.help_text }}
+                                {{ form.keywords.help_text }}
 
-            </p>
+                            </p>
 
 
-        </div>
+                        </div>
 
-    </div>
+                    </div>
 
-</section>
-<!-- ================================================= -->
-<!-- AI Capabilities -->
-<!-- ================================================= -->
+                </section>
+                <!-- ================================================= -->
+                <!-- AI Capabilities -->
+                <!-- ================================================= -->
 
-<!-- ================================================= -->
-<!-- Generate Section -->
-<!-- ================================================= -->
+                <!-- ================================================= -->
+                <!-- Generate Section -->
+                <!-- ================================================= -->
 
-<section
-class="
+                <section class="
 relative
 
 overflow-hidden
@@ -877,10 +805,9 @@ dark:to-slate-950
 
 shadow-xl">
 
-    <!-- Background -->
+                    <!-- Background -->
 
-    <div
-    class="
+                    <div class="
     absolute
 
     -right-20
@@ -894,10 +821,9 @@ shadow-xl">
     bg-blue-500/10
 
     blur-3xl">
-    </div>
+                    </div>
 
-    <div
-    class="
+                    <div class="
     absolute
 
     -left-20
@@ -911,17 +837,15 @@ shadow-xl">
     bg-violet-500/10
 
     blur-3xl">
-    </div>
+                    </div>
 
-    <div class="relative p-8 lg:p-10">
+                    <div class="relative p-8 lg:p-10">
 
-        <!-- Header -->
+                        <!-- Header -->
 
-        <div
-        class="text-center">
+                        <div class="text-center">
 
-            <div
-            class="
+                            <div class="
             mx-auto
 
             flex
@@ -943,27 +867,23 @@ shadow-xl">
 
             shadow-lg">
 
-                <i
-                data-lucide="rocket"
-                class="w-8 h-8">
-                </i>
+                                <i data-lucide="rocket" class="w-8 h-8">
+                                </i>
 
-            </div>
+                            </div>
 
-            <h2
-            class="
+                            <h2 class="
             mt-6
 
             text-3xl
 
             font-bold">
 
-                Ready to Generate?
+                                Ready to Generate?
 
-            </h2>
+                            </h2>
 
-            <p
-            class="
+                            <p class="
             mt-3
 
             max-w-2xl
@@ -973,17 +893,16 @@ shadow-xl">
             text-slate-500
             dark:text-slate-400">
 
-                AI will analyze your prompt, generate the complete
-                blog, create images and prepare everything for editing.
+                                AI will analyze your prompt, generate the complete
+                                blog, create images and prepare everything for editing.
 
-            </p>
+                            </p>
 
-        </div>
+                        </div>
 
-        <!-- Summary -->
+                        <!-- Summary -->
 
-        <div
-        class="
+                        <div class="
         mt-10
 
         grid
@@ -994,8 +913,7 @@ shadow-xl">
 
         lg:grid-cols-4">
 
-            <div
-            class="
+                            <div class="
             rounded-2xl
 
             bg-white
@@ -1007,26 +925,22 @@ shadow-xl">
 
             p-5">
 
-                <div
-                class="flex items-center gap-3">
+                                <div class="flex items-center gap-3">
 
-                    <i
-                    data-lucide="file-text"
-                    class="w-6 h-6 text-blue-600">
-                    </i>
+                                    <i data-lucide="file-text" class="w-6 h-6 text-blue-600">
+                                    </i>
 
-                    <span class="font-medium">
+                                    <span class="font-medium">
 
-                        Full Article
+                                        Full Article
 
-                    </span>
+                                    </span>
 
-                </div>
+                                </div>
 
-            </div>
+                            </div>
 
-            <div
-            class="
+                            <div class="
             rounded-2xl
 
             bg-white
@@ -1038,26 +952,22 @@ shadow-xl">
 
             p-5">
 
-                <div
-                class="flex items-center gap-3">
+                                <div class="flex items-center gap-3">
 
-                    <i
-                    data-lucide="image"
-                    class="w-6 h-6 text-violet-600">
-                    </i>
+                                    <i data-lucide="image" class="w-6 h-6 text-violet-600">
+                                    </i>
 
-                    <span class="font-medium">
+                                    <span class="font-medium">
 
-                        AI Images
+                                        AI Images
 
-                    </span>
+                                    </span>
 
-                </div>
+                                </div>
 
-            </div>
+                            </div>
 
-            <div
-            class="
+                            <div class="
             rounded-2xl
 
             bg-white
@@ -1069,26 +979,22 @@ shadow-xl">
 
             p-5">
 
-                <div
-                class="flex items-center gap-3">
+                                <div class="flex items-center gap-3">
 
-                    <i
-                    data-lucide="search"
-                    class="w-6 h-6 text-green-600">
-                    </i>
+                                    <i data-lucide="search" class="w-6 h-6 text-green-600">
+                                    </i>
 
-                    <span class="font-medium">
+                                    <span class="font-medium">
 
-                        SEO Ready
+                                        SEO Ready
 
-                    </span>
+                                    </span>
 
-                </div>
+                                </div>
 
-            </div>
+                            </div>
 
-            <div
-            class="
+                            <div class="
             rounded-2xl
 
             bg-white
@@ -1100,30 +1006,26 @@ shadow-xl">
 
             p-5">
 
-                <div
-                class="flex items-center gap-3">
+                                <div class="flex items-center gap-3">
 
-                    <i
-                    data-lucide="clock-3"
-                    class="w-6 h-6 text-orange-600">
-                    </i>
+                                    <i data-lucide="clock-3" class="w-6 h-6 text-orange-600">
+                                    </i>
 
-                    <span class="font-medium">
+                                    <span class="font-medium">
 
-                        2–3 Minutes
+                                        2–3 Minutes
 
-                    </span>
+                                    </span>
 
-                </div>
+                                </div>
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
-        <!-- Tip -->
+                        <!-- Tip -->
 
-        <div
-        class="
+                        <div class="
         mt-8
 
         rounded-2xl
@@ -1138,51 +1040,45 @@ shadow-xl">
 
         p-5">
 
-            <div
-            class="
+                            <div class="
             flex
 
             items-start
 
             gap-4">
 
-                <i
-                data-lucide="lightbulb"
-                class="w-6 h-6 text-yellow-500 mt-1">
-                </i>
+                                <i data-lucide="lightbulb" class="w-6 h-6 text-yellow-500 mt-1">
+                                </i>
 
-                <div>
+                                <div>
 
-                    <h3
-                    class="font-semibold">
+                                    <h3 class="font-semibold">
 
-                        AI Tip
+                                        AI Tip
 
-                    </h3>
+                                    </h3>
 
-                    <p
-                    class="
+                                    <p class="
                     mt-1
 
                     text-slate-600
                     dark:text-slate-300">
 
-                        Providing a detailed content brief and relevant
-                        keywords helps the AI generate more accurate,
-                        engaging and SEO-friendly blogs.
+                                        Providing a detailed content brief and relevant
+                                        keywords helps the AI generate more accurate,
+                                        engaging and SEO-friendly blogs.
 
-                    </p>
+                                    </p>
 
-                </div>
+                                </div>
 
-            </div>
+                            </div>
 
-        </div>
+                        </div>
 
-        <!-- Buttons -->
+                        <!-- Buttons -->
 
-        <div
-        class="
+                        <div class="
         mt-10
 
         flex
@@ -1195,11 +1091,7 @@ shadow-xl">
 
         gap-4">
 
-            <a
-
-            href="{% url 'blogs:dashboard' %}"
-
-            class="
+                            <a href="{% url 'blogs:dashboard' %}" class="
             px-8
 
             py-4
@@ -1218,17 +1110,11 @@ shadow-xl">
             hover:bg-slate-100
             dark:hover:bg-slate-800">
 
-                Cancel
+                                Cancel
 
-            </a>
+                            </a>
 
-            <button
-
-            id="generateButton"
-
-            type="submit"
-
-            class="
+                            <button id="generateButton" type="submit" class="
             group
 
             px-10
@@ -1261,8 +1147,7 @@ shadow-xl">
 
             hover:shadow-2xl">
 
-                <span
-                class="
+                                <span class="
                 flex
 
                 items-center
@@ -1271,38 +1156,35 @@ shadow-xl">
 
                 gap-3">
 
-                    <i
-                    data-lucide="sparkles"
-                    class="
+                                    <i data-lucide="sparkles" class="
                     w-5
                     h-5
 
                     transition-transform
 
                     group-hover:rotate-12">
-                    </i>
+                                    </i>
 
-                    Generate AI Blog
+                                    Generate AI Blog
 
-                </span>
+                                </span>
 
-            </button>
+                            </button>
 
-        </div>
+                        </div>
 
+                    </div>
+
+                </section>
+                <!-- ================================================= -->
+                <!-- AI Generation -->
+                <!-- ================================================= -->
+            </div>
+
+        </form>
     </div>
-
-</section>
-<!-- ================================================= -->
-<!-- AI Generation -->
-<!-- ================================================= -->
 </div>
-
-</form>
-</div>
-</div>
-<div
-id="loadingSkeleton" class="hidden max-w-6xl mx-auto">
+<div id="loadingSkeleton" class="hidden max-w-6xl mx-auto">
 
     <!-- Hero -->
 
@@ -1322,8 +1204,7 @@ id="loadingSkeleton" class="hidden max-w-6xl mx-auto">
 
         <div class="p-10">
 
-            <div
-            class="
+            <div class="
             flex
 
             items-center
@@ -1332,8 +1213,7 @@ id="loadingSkeleton" class="hidden max-w-6xl mx-auto">
 
                 <!-- Animated Icon -->
 
-                <div
-                class="
+                <div class="
                 relative
 
                 flex
@@ -1348,8 +1228,7 @@ id="loadingSkeleton" class="hidden max-w-6xl mx-auto">
 
                 bg-white/10">
 
-                    <div
-                    class="
+                    <div class="
                     absolute
 
                     inset-0
@@ -1363,10 +1242,7 @@ id="loadingSkeleton" class="hidden max-w-6xl mx-auto">
                     animate-ping">
                     </div>
 
-                    <i
-                    data-lucide="sparkles"
-
-                    class="
+                    <i data-lucide="sparkles" class="
                     relative
 
                     w-8
@@ -1380,8 +1256,7 @@ id="loadingSkeleton" class="hidden max-w-6xl mx-auto">
 
                 <div>
 
-                    <h2
-                    class="
+                    <h2 class="
                     text-3xl
 
                     font-bold">
@@ -1390,8 +1265,7 @@ id="loadingSkeleton" class="hidden max-w-6xl mx-auto">
 
                     </h2>
 
-                    <p
-                    class="
+                    <p class="
                     mt-2
 
                     text-blue-100">
@@ -1400,14 +1274,20 @@ id="loadingSkeleton" class="hidden max-w-6xl mx-auto">
 
                     </p>
 
+                    <div
+                        class="mt-5 inline-flex items-center gap-3 bg-red-500/20 border border-red-400/30 text-white px-5 py-3 rounded-2xl backdrop-blur-md shadow-lg shadow-red-900/20">
+                        <i data-lucide="alert-triangle" class="w-6 h-6 text-red-300"></i>
+                        <span class="text-sm font-medium tracking-wide">CAUTION: Do not navigate away or refresh this
+                            page, or the blog generation will stop instantly.</span>
+                    </div>
+
                 </div>
 
             </div>
 
             <!-- Progress -->
 
-            <div
-            class="
+            <div class="
             mt-8
 
             h-2
@@ -1418,11 +1298,7 @@ id="loadingSkeleton" class="hidden max-w-6xl mx-auto">
 
             bg-white/20">
 
-                <div
-
-                id="progressBar"
-
-                class="
+                <div id="progressBar" class="
                 h-full
 
                 w-1/4
@@ -1442,8 +1318,7 @@ id="loadingSkeleton" class="hidden max-w-6xl mx-auto">
 
     <!-- Timeline -->
 
-    <div
-    class="
+    <div class="
     mt-8
 
     rounded-[2rem]
@@ -1460,44 +1335,47 @@ id="loadingSkeleton" class="hidden max-w-6xl mx-auto">
 
     p-8">
 
-        <div
-        id="generationSteps"
-
-        class="space-y-6">
+        <div id="generationSteps" class="space-y-6">
 
             <div class="step active">
 
-                ✅ Understanding your topic
+                <i data-lucide="check-circle-2"
+                    class="w-5 h-5 text-emerald-400 inline-block -mt-1 mr-2"></i>Understanding your topic
 
             </div>
 
             <div class="step">
 
-                ⏳ Creating blog outline
+                <i data-lucide="loader-circle"
+                    class="w-5 h-5 text-blue-300 inline-block -mt-1 mr-2 animate-spin"></i>Creating blog outline
 
             </div>
 
             <div class="step">
 
-                ⏳ Writing chapters
+                <i data-lucide="loader-circle"
+                    class="w-5 h-5 text-blue-300 inline-block -mt-1 mr-2 animate-spin"></i>Writing chapters
 
             </div>
 
             <div class="step">
 
-                ⏳ Generating AI images
+                <i data-lucide="loader-circle"
+                    class="w-5 h-5 text-blue-300 inline-block -mt-1 mr-2 animate-spin"></i>Generating AI images
 
             </div>
 
             <div class="step">
 
-                ⏳ Optimizing SEO
+                <i data-lucide="loader-circle"
+                    class="w-5 h-5 text-blue-300 inline-block -mt-1 mr-2 animate-spin"></i>Optimizing SEO
 
             </div>
 
             <div class="step">
 
-                ⏳ Finalizing blog
+                <i data-lucide="loader-circle"
+                    class="w-5 h-5 text-blue-300 inline-block -mt-1 mr-2 animate-spin"></i>Finalizing blog
 
             </div>
 
@@ -1507,8 +1385,7 @@ id="loadingSkeleton" class="hidden max-w-6xl mx-auto">
 
     <!-- Live Status -->
 
-    <div
-    class="
+    <div class="
     mt-8
 
     rounded-2xl
@@ -1525,18 +1402,14 @@ id="loadingSkeleton" class="hidden max-w-6xl mx-auto">
 
     p-5">
 
-        <div
-        class="
+        <div class="
         flex
 
         items-center
 
         gap-3">
 
-            <i
-            data-lucide="bot"
-
-            class="
+            <i data-lucide="bot" class="
             w-6
 
             h-6
@@ -1544,11 +1417,7 @@ id="loadingSkeleton" class="hidden max-w-6xl mx-auto">
             text-blue-600">
             </i>
 
-            <span
-
-            id="generationStatus"
-
-            class="font-medium">
+            <span id="generationStatus" class="font-medium">
 
                 Understanding your prompt...
 
@@ -1596,31 +1465,32 @@ id="loadingSkeleton" class="hidden max-w-6xl mx-auto">
 
 </div>
 <script>
-const brief = document.getElementById("id_content_brief");
-const counter = document.getElementById("briefCounter");
+    const brief = document.getElementById("id_content_brief");
+    const counter = document.getElementById("briefCounter");
 
-if (brief && counter) {
+    if (brief && counter) {
 
-    const updateCounter = () => {
-        counter.textContent = `${brief.value.length} Characters`;
-    };
+        const updateCounter = () => {
+            counter.textContent = `${brief.value.length} Characters`;
+        };
 
-    brief.addEventListener("input", updateCounter);
+        brief.addEventListener("input", updateCounter);
 
-    updateCounter();
-}
-document.querySelector("form").addEventListener("submit", function () {
+        updateCounter();
+    }
+    document.querySelector("form").addEventListener("submit", function () {
 
-    const button = document.getElementById("generateButton");
+        const button = document.getElementById("generateButton");
 
-    button.disabled = true;
-    button.innerHTML = "⏳ Generating...";
+        button.disabled = true;
+        button.innerHTML = '<i data-lucide="loader-circle" class="w-5 h-5 inline-block -mt-1 mr-2 animate-spin"></i> Generating...';
 
-    document.getElementById("pageContent").classList.add("hidden");
+        document.getElementById("pageContent").classList.add("hidden");
 
-    document.getElementById("loadingSkeleton").classList.remove("hidden");
+        document.getElementById("loadingSkeleton").classList.remove("hidden");
+        if (typeof lucide !== "undefined") { lucide.createIcons(); }
 
-});
+    });
 
 </script>
 
